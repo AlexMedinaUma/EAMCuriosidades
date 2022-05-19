@@ -95,12 +95,12 @@
     text-decoration: none;
 }
 
-#tarjetaCuriosidades:hover{
+.tarjetaCuriosidades:hover{
     padding-top: 150px;
     padding-bottom: 150px;
     transition:0.75s;
 
 }
-#tarjetaCuriosidades{
+.tarjetaCuriosidades{
     transition:0.75s;
 }
