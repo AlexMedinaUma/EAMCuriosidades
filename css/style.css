@@ -94,13 +94,15 @@
     padding: 10px 20px;
     text-decoration: none;
 }
+@media (pointer: fine) {
+    .tarjetaCuriosidades:hover{
+        padding-top: 150px;
+        padding-bottom: 150px;
+        transition:0.75s;
+    
+    }
+  }
 
-.tarjetaCuriosidades:hover{
-    padding-top: 150px;
-    padding-bottom: 150px;
-    transition:0.75s;
-
-}
 .tarjetaCuriosidades{
     transition:0.75s;
 }
