@@ -15,7 +15,7 @@ planetList.addEventListener("click", (event) => {
 });
 
 const selects = document.querySelectorAll(".select");
-const planetImage = document.querySelector(".venus-img");
+const planetImage = document.querySelector(".uranus-img");
 const surfaceOverlay = document.querySelector(".surface-overlay");
 const planetDescription = document.querySelector(".planet-description");
 
@@ -37,27 +37,27 @@ selects.forEach((entry) => {
             const selectType = event.target.getAttribute("id");
             //seleccionar imagen
             if(selectType === "planet"){
-              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-venus.svg");
+              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-uranus.svg");
               surfaceOverlay.classList.add("hide");
             }
             else if (selectType === "geology") {
-              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-venus.svg");
-              surfaceOverlay.setAttribute("src", "/planetas/imgPlanetas/geology-venus.png");
+              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-uranus.svg");
+              surfaceOverlay.setAttribute("src", "/planetas/imgPlanetas/geology-uranus.png");
               surfaceOverlay.classList.remove("hide");
             } else {
               surfaceOverlay.classList.add("hide");
-              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-venus-internal.svg");
+              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-uranus-internal.svg");
             }
             //cambiar la descripcion
             switch (selectType) {
               case "planet":
-                planetDescription.innerHTML = "Venus es el segundo planeta del sistema solar en orden de proximidad al Sol y el tercero en cuanto a tamaño en orden ascendente después de Mercurio y Marte. Al igual que Mercurio, carece de satélites naturales. Recibe su nombre en honor a Venus, la diosa romana del amor (en la Antigua Grecia, Afrodita).";
+                planetDescription.innerHTML = "Urano es el séptimo planeta del sistema solar, el tercero de mayor tamaño, y el cuarto más masivo. Se llama así en honor de la divinidad griega del cielo Urano. Aunque es detectable a simple vista en el cielo nocturno, no fue catalogado como planeta por los astrónomos de la antigüedad debido a su escasa luminosidad y a la lentitud de su órbita.";
                 break;
               case "internal":
-                planetDescription.innerHTML = "Sin información sísmica o detalles, momento de inercia, existen pocos datos directos sobre la geoquímica y la estructura interna de Venus. Sin embargo, la similitud en tamaño y densidad entre Venus y la Tierra sugiere que ambos comparten una estructura interna afín: un núcleo, un manto, y una corteza.";
+                planetDescription.innerHTML = "La masa de Urano es 14,5 veces la de la Tierra haciéndolo el menos masivo de los planetas gigantes, mientras que su densidad, 1,27 g/cm³, lo hace el segundo menos denso entre ellos, por detrás de Saturno. Aunque tiene un diámetro ligeramente mayor que el de Neptuno (unas cuatro veces el de la Tierra), tiene menos masa. ";
                 break;
               case "geology":
-                planetDescription.innerHTML = "Venus tiene una lenta rotación retrógrada, lo que significa que gira de este a oeste, en lugar de hacerlo de oeste a este como lo hacen la mayoría de los demás planetas mayores (Urano también tiene una rotación retrógrada, aunque el eje de rotación de Urano, inclinado 97.86°, prácticamente descansa sobre el plano orbital).";
+                planetDescription.innerHTML = "Aunque no hay una superficie sólida bien definida en el interior de Urano, la parte más exterior de la envoltura gaseosa de Urano se llama atmósfera. La capacidad de los sensores remotos llega aproximadamente hasta unos 300 km por debajo del nivel de 1 bar (100 kPa), con una presión correspondiente de unos 100 bar (10 MPa) y una temperatura de 320 K.61 ";
                 break;
             }
           

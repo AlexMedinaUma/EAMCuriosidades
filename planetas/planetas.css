@@ -140,6 +140,7 @@ nav{
     font-size: 2em;
     letter-spacing: -1px;
     font-weight: 400;
+    
 }
 
 .planets{
@@ -234,6 +235,15 @@ nav{
 
     .logo{
         flex: 1;
+    }
+    .volver{
+        background-color: #F8CB8A;
+        border-radius: 15px;
+        padding-left: 15px;
+        max-width: 220px;
+    }
+    .volver:hover{
+        background-color: #faba62;
     }
 
     .planets-container{

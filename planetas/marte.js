@@ -15,7 +15,7 @@ planetList.addEventListener("click", (event) => {
 });
 
 const selects = document.querySelectorAll(".select");
-const planetImage = document.querySelector(".venus-img");
+const planetImage = document.querySelector(".mars-img");
 const surfaceOverlay = document.querySelector(".surface-overlay");
 const planetDescription = document.querySelector(".planet-description");
 
@@ -37,27 +37,27 @@ selects.forEach((entry) => {
             const selectType = event.target.getAttribute("id");
             //seleccionar imagen
             if(selectType === "planet"){
-              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-venus.svg");
+              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-mars.svg");
               surfaceOverlay.classList.add("hide");
             }
             else if (selectType === "geology") {
-              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-venus.svg");
-              surfaceOverlay.setAttribute("src", "/planetas/imgPlanetas/geology-venus.png");
+              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-mars.svg");
+              surfaceOverlay.setAttribute("src", "/planetas/imgPlanetas/geology-mars.png");
               surfaceOverlay.classList.remove("hide");
             } else {
               surfaceOverlay.classList.add("hide");
-              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-venus-internal.svg");
+              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-mars-internal.svg");
             }
             //cambiar la descripcion
             switch (selectType) {
               case "planet":
-                planetDescription.innerHTML = "Venus es el segundo planeta del sistema solar en orden de proximidad al Sol y el tercero en cuanto a tamaño en orden ascendente después de Mercurio y Marte. Al igual que Mercurio, carece de satélites naturales. Recibe su nombre en honor a Venus, la diosa romana del amor (en la Antigua Grecia, Afrodita).";
+                planetDescription.innerHTML = "Marte es el cuarto planeta en orden de distancia al Sol y el segundo más pequeño del sistema solar, después de Mercurio. Recibió su nombre en homenaje al dios de la guerra de la mitología romana (Ares en la mitología griega), y también es conocido como «el planeta rojo» debido a la apariencia rojiza5​ que le confiere el óxido de hierro predominante en su superficie.";
                 break;
               case "internal":
-                planetDescription.innerHTML = "Sin información sísmica o detalles, momento de inercia, existen pocos datos directos sobre la geoquímica y la estructura interna de Venus. Sin embargo, la similitud en tamaño y densidad entre Venus y la Tierra sugiere que ambos comparten una estructura interna afín: un núcleo, un manto, y una corteza.";
+                planetDescription.innerHTML = "Al igual que la Tierra, Marte tiene diferenciados un denso núcleo metálico recubierto por materiales menos densos. Los modelos actuales sugieren un núcleo con un radio de aproximadamente 1,794 kilómetros, consistente principalmente en níquel y hierro con aproximadamente un 16-17 % de azufre.";
                 break;
               case "geology":
-                planetDescription.innerHTML = "Venus tiene una lenta rotación retrógrada, lo que significa que gira de este a oeste, en lugar de hacerlo de oeste a este como lo hacen la mayoría de los demás planetas mayores (Urano también tiene una rotación retrógrada, aunque el eje de rotación de Urano, inclinado 97.86°, prácticamente descansa sobre el plano orbital).";
+                planetDescription.innerHTML = "Marte es un planeta rocoso compuesto por minerales que contienen silicio, oxígeno, metales y otros elementos que normalmente componen las rocas. La superficie de Marte está compuesta principalmente por basalto toleítico32​ con un alto contenido en óxidos de hierro que proporcionan el característico color rojo de su superficie.";
                 break;
             }
           

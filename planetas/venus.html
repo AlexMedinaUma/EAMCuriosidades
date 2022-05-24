@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,12 @@
     <header>
         
         <nav>
-            <div class="logo"><h2>The Planets</h2></div>
+            <div class="logo">
+                <div class="volver">
+                    <a href="/index.html"><h3 style="color: black;">Volver a Curiosidades</h3></a>
+                </div>
+                
+            </div>
             <div class="planets-container">
                 <ul class="planets hide-mobile"> <!-- Add class hide-mobile -->
                     <li class="planet nav-planet">
@@ -80,15 +85,15 @@
             <div><img class="menu" src="/planetas/imgPlanetas/icon-hamburger.svg" alt=""></div>
         </nav>
     
-</header>
+    </header>
 
     <main>
             <div class="container">
                 <div class="select-container">
                     <ul class="selects full-width">
-                        <li class="select active-planet select-planet" value="planet"">General</li>
-                        <li class="select" value="internal"">Estructura Interna</li>
-                        <li class="select" value="geology">Superficie Geológica</li>
+                        <li class="select active-planet select-planet" id="planet">General</li>
+                        <li class="select" id="internal">Estructura Interna</li>
+                        <li class="select" id="geology">Superficie Geológica</li>
                     </ul>
                 </div>
           
@@ -98,7 +103,7 @@
                 </div>
                 <div class="info-container">
                     <h1 class="planet-headline">Venus</h1>
-                    <p class="planet-description">Venus es el segundo planeta del sistema solar en orden de proximidad al Sol y el tercero en cuanto a tamaño en orden ascendente después de Mercurio y Marte. Al igual que Mercurio, carece de satélites naturales. Recibe su nombre en honor a Venus, la diosa romana del amor (en la Antigua Grecia, Afrodita). </p>
+                    <p class="planet-description">Venus es el segundo planeta del sistema solar en orden de proximidad al Sol y el tercero en cuanto a tamaño en orden ascendente después de Mercurio y Marte. Al igual que Mercurio, carece de satélites naturales. Recibe su nombre en honor a Venus, la diosa romana del amor (en la Antigua Grecia, Afrodita).</p>
                     <p class="planet-link">Fuente: <a href="https://es.wikipedia.org/wiki/Venus_(planeta)">Wikipedia</a><img class="source-img" src="/planetas/imgPlanetas/icon-source.svg" alt=""></p>
                 </div>
                 <div class="spec-container">
@@ -123,7 +128,7 @@
                             Radio
                         </p>
                         <span class="radius">
-                            6051,8 KM
+                            6051.8 KM
                         </span>
                     </div>
                     <div class="spec">

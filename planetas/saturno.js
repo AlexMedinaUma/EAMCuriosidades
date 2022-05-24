@@ -15,7 +15,7 @@ planetList.addEventListener("click", (event) => {
 });
 
 const selects = document.querySelectorAll(".select");
-const planetImage = document.querySelector(".venus-img");
+const planetImage = document.querySelector(".saturn-img");
 const surfaceOverlay = document.querySelector(".surface-overlay");
 const planetDescription = document.querySelector(".planet-description");
 
@@ -37,27 +37,27 @@ selects.forEach((entry) => {
             const selectType = event.target.getAttribute("id");
             //seleccionar imagen
             if(selectType === "planet"){
-              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-venus.svg");
+              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-saturn.svg");
               surfaceOverlay.classList.add("hide");
             }
             else if (selectType === "geology") {
-              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-venus.svg");
-              surfaceOverlay.setAttribute("src", "/planetas/imgPlanetas/geology-venus.png");
+              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-saturn.svg");
+              surfaceOverlay.setAttribute("src", "/planetas/imgPlanetas/geology-saturn.png");
               surfaceOverlay.classList.remove("hide");
             } else {
               surfaceOverlay.classList.add("hide");
-              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-venus-internal.svg");
+              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-saturn-internal.svg");
             }
             //cambiar la descripcion
             switch (selectType) {
               case "planet":
-                planetDescription.innerHTML = "Venus es el segundo planeta del sistema solar en orden de proximidad al Sol y el tercero en cuanto a tamaño en orden ascendente después de Mercurio y Marte. Al igual que Mercurio, carece de satélites naturales. Recibe su nombre en honor a Venus, la diosa romana del amor (en la Antigua Grecia, Afrodita).";
+                planetDescription.innerHTML = "Saturno es el sexto planeta del sistema solar contando desde el Sol, el segundo en tamaño y masa después de Júpiter y el único con un sistema de anillos visible desde la Tierra. Su nombre proviene del dios romano Saturno. Forma parte de los denominados planetas exteriores o gaseosos. ";
                 break;
               case "internal":
-                planetDescription.innerHTML = "Sin información sísmica o detalles, momento de inercia, existen pocos datos directos sobre la geoquímica y la estructura interna de Venus. Sin embargo, la similitud en tamaño y densidad entre Venus y la Tierra sugiere que ambos comparten una estructura interna afín: un núcleo, un manto, y una corteza.";
+                planetDescription.innerHTML = "Los modelos planetarios típicos consideran que el interior del planeta es semejante al de Júpiter, con un núcleo rocoso rodeado por hidrógeno, helio y trazas de otras sustancias volátiles.10​ Sobre él se extiende una extensa capa de hidrógeno líquido, debido a los efectos de las elevadas presiones y temperaturas. ";
                 break;
               case "geology":
-                planetDescription.innerHTML = "Venus tiene una lenta rotación retrógrada, lo que significa que gira de este a oeste, en lugar de hacerlo de oeste a este como lo hacen la mayoría de los demás planetas mayores (Urano también tiene una rotación retrógrada, aunque el eje de rotación de Urano, inclinado 97.86°, prácticamente descansa sobre el plano orbital).";
+                planetDescription.innerHTML = "Saturno es un planeta visiblemente achatado en los polos con un ecuador que sobresale formando un esferoide ovalado.La característica más notable de Saturno son sus anillos, cuyas partículas giran a una velocidad de 48 000 km/h. ";
                 break;
             }
           

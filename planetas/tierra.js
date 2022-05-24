@@ -15,7 +15,7 @@ planetList.addEventListener("click", (event) => {
 });
 
 const selects = document.querySelectorAll(".select");
-const planetImage = document.querySelector(".venus-img");
+const planetImage = document.querySelector(".earth-img");
 const surfaceOverlay = document.querySelector(".surface-overlay");
 const planetDescription = document.querySelector(".planet-description");
 
@@ -37,27 +37,27 @@ selects.forEach((entry) => {
             const selectType = event.target.getAttribute("id");
             //seleccionar imagen
             if(selectType === "planet"){
-              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-venus.svg");
+              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-earth.svg");
               surfaceOverlay.classList.add("hide");
             }
             else if (selectType === "geology") {
-              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-venus.svg");
-              surfaceOverlay.setAttribute("src", "/planetas/imgPlanetas/geology-venus.png");
+              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-earth.svg");
+              surfaceOverlay.setAttribute("src", "/planetas/imgPlanetas/geology-earth.png");
               surfaceOverlay.classList.remove("hide");
             } else {
               surfaceOverlay.classList.add("hide");
-              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-venus-internal.svg");
+              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-earth-internal.svg");
             }
             //cambiar la descripcion
             switch (selectType) {
               case "planet":
-                planetDescription.innerHTML = "Venus es el segundo planeta del sistema solar en orden de proximidad al Sol y el tercero en cuanto a tamaño en orden ascendente después de Mercurio y Marte. Al igual que Mercurio, carece de satélites naturales. Recibe su nombre en honor a Venus, la diosa romana del amor (en la Antigua Grecia, Afrodita).";
+                planetDescription.innerHTML = "La Tierra se formó hace aproximadamente 4550 millones de años y la vida surgió unos mil millones de años después.18​ Es el hogar de millones de especies, incluidos los seres humanos y actualmente el único cuerpo astronómico donde se conoce la existencia de vida.";
                 break;
               case "internal":
-                planetDescription.innerHTML = "Sin información sísmica o detalles, momento de inercia, existen pocos datos directos sobre la geoquímica y la estructura interna de Venus. Sin embargo, la similitud en tamaño y densidad entre Venus y la Tierra sugiere que ambos comparten una estructura interna afín: un núcleo, un manto, y una corteza.";
+                planetDescription.innerHTML = "El interior de la Tierra, al igual que el de los otros planetas terrestres, está dividido en capas según su composición química o sus propiedades físicas (reológicas), pero, a diferencia de los otros planetas terrestres, tiene un núcleo interno y externo distintos. Sus capas son corteza, manto y nucleo";
                 break;
               case "geology":
-                planetDescription.innerHTML = "Venus tiene una lenta rotación retrógrada, lo que significa que gira de este a oeste, en lugar de hacerlo de oeste a este como lo hacen la mayoría de los demás planetas mayores (Urano también tiene una rotación retrógrada, aunque el eje de rotación de Urano, inclinado 97.86°, prácticamente descansa sobre el plano orbital).";
+                planetDescription.innerHTML = "La superficie del planeta se moldea a lo largo de períodos de tiempo geológicos, debido a la erosión tectónica. Las características de esta superficie formada o deformada mediante la tectónica de placas están sujetas a una constante erosión a causa de las precipitaciones, los ciclos térmicos y los efectos químicos.";
                 break;
             }
           

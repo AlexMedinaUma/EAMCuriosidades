@@ -15,7 +15,7 @@ planetList.addEventListener("click", (event) => {
 });
 
 const selects = document.querySelectorAll(".select");
-const planetImage = document.querySelector(".venus-img");
+const planetImage = document.querySelector(".neptune-img");
 const surfaceOverlay = document.querySelector(".surface-overlay");
 const planetDescription = document.querySelector(".planet-description");
 
@@ -37,27 +37,27 @@ selects.forEach((entry) => {
             const selectType = event.target.getAttribute("id");
             //seleccionar imagen
             if(selectType === "planet"){
-              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-venus.svg");
+              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-neptune.svg");
               surfaceOverlay.classList.add("hide");
             }
             else if (selectType === "geology") {
-              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-venus.svg");
-              surfaceOverlay.setAttribute("src", "/planetas/imgPlanetas/geology-venus.png");
+              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-neptune.svg");
+              surfaceOverlay.setAttribute("src", "/planetas/imgPlanetas/geology-neptune.png");
               surfaceOverlay.classList.remove("hide");
             } else {
               surfaceOverlay.classList.add("hide");
-              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-venus-internal.svg");
+              planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-neptune-internal.svg");
             }
             //cambiar la descripcion
             switch (selectType) {
               case "planet":
-                planetDescription.innerHTML = "Venus es el segundo planeta del sistema solar en orden de proximidad al Sol y el tercero en cuanto a tamaño en orden ascendente después de Mercurio y Marte. Al igual que Mercurio, carece de satélites naturales. Recibe su nombre en honor a Venus, la diosa romana del amor (en la Antigua Grecia, Afrodita).";
+                planetDescription.innerHTML = "Neptuno es el octavo planeta en distancia respecto al Sol. Forma parte de los denominados planetas exteriores, y dentro de estos, es uno de los gigantes helados, y es el primero que fue descubierto gracias a predicciones matemáticas. Su nombre fue puesto en honor al dios romano del mar Neptuno, y es el cuarto planeta en diámetro y el tercero más grande en masa.";
                 break;
               case "internal":
-                planetDescription.innerHTML = "Sin información sísmica o detalles, momento de inercia, existen pocos datos directos sobre la geoquímica y la estructura interna de Venus. Sin embargo, la similitud en tamaño y densidad entre Venus y la Tierra sugiere que ambos comparten una estructura interna afín: un núcleo, un manto, y una corteza.";
+                planetDescription.innerHTML = "La estructura interna de Neptuno se trata de un núcleo rocoso cubierto por una costra helada, oculto bajo una atmósfera gruesa y espesa. Los dos tercios interiores de Neptuno se componen de una mezcla de roca fundida, agua, amoníaco líquido y metano. El tercio exterior es una mezcla de gas caliente compuesto de hidrógeno, helio, agua y metano.";
                 break;
               case "geology":
-                planetDescription.innerHTML = "Venus tiene una lenta rotación retrógrada, lo que significa que gira de este a oeste, en lugar de hacerlo de oeste a este como lo hacen la mayoría de los demás planetas mayores (Urano también tiene una rotación retrógrada, aunque el eje de rotación de Urano, inclinado 97.86°, prácticamente descansa sobre el plano orbital).";
+                planetDescription.innerHTML = "Al orbitar tan lejos del Sol, Neptuno recibe muy poco calor. Su temperatura en la superficie es de −218 °C (55 K). Sin embargo, el planeta parece tener una fuente interna de calor. Se piensa que puede ser un remanente del calor producido por la concreción de materia durante la creación del mismo, que ahora irradia calor lentamente hacia el espacio. ";
                 break;
             }
           
