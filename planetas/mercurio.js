@@ -34,7 +34,7 @@ selects.forEach((entry) => {
     } else {
       event.target.className = `select active-planet`;
     }
-            const selectType = event.target.getAttribute("value");
+            const selectType = event.target.getAttribute("id");
             //seleccionar imagen
             if(selectType === "planet"){
               planetImage.setAttribute("src", "/planetas/imgPlanetas/planet-mercury.svg");
