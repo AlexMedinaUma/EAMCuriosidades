@@ -13,3 +13,4 @@ planetList.addEventListener("click", (event) => {
     planetList.classList.toggle("hide-mobile");
   }
 });
+

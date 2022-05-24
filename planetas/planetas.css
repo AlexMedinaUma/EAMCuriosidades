@@ -2,17 +2,7 @@
 
 :root{
     --blue-dark: #070724;
-    --gray-dark: #38384F;
-    --gray-light: #838391;
-    --blue-light: #419EBB;
-    --yellow: #EDA249;
-    --purple: #6f2ed6;
-    --rust: #D14C32;
-    --red: #D83A34;
-    --orange: #CD5120;
-    --cyan: #1ec2a4;
-    --blue: #2d68f0;
-
+    --primary: #F8CB8A;
 }
 
 /*======Resets======*/
@@ -258,29 +248,8 @@ nav{
     li{
         border-top: 4px solid transparent;
     }
-    .nav-mercury:hover{
-        border-top: 4px solid var(--blue-light);
-    }
-    .nav-venus:hover{ 
-        border-top: 4px solid var(--yellow);
-    }
-    .nav-earth:hover{
-        border-top: 4px solid var(--purple);
-    }
-    .nav-mars:hover{
-        border-top: 4px solid var(--rust);
-    }
-    .nav-jupiter:hover{
-        border-top: 4px solid var(--red);
-    }
-    .nav-saturn:hover{
-        border-top: 4px solid var(--orange);
-    }
-    .nav-uranus:hover{
-        border-top: 4px solid var(--cyan);
-    }
-    .nav-neptune:hover{
-        border-top: 4px solid var(--blue);
+    .nav-planet:hover{
+        border-top: 4px solid var(--primary);
     }
 }
 
@@ -346,76 +315,26 @@ nav{
         background-color: #D8D8D8;
         border: 1px solid #D8D8D8;
         cursor: pointer;
+        color: var(--blue-dark)
         
     }
-    .active-mercury,
-    .active-mercury:hover{
-        background-color: var(--blue-light);
-        border: 1px solid var(--blue-light);
+    .active-planet{
+        color: var(--blue-dark);
+        background-color: var(--primary);
+        border: 1px solid var(--primary);
     }
-    .active-venus,
-    .active-venus:hover{
-        background-color: var(--yellow);
-        border: 1px solid var(--yellow);
-    }
-    .active-earth,
-    .active-earth:hover{
-        background-color: var(--purple);
-        border: 1px solid var(--purple);
-    }
-    .active-mars,
-    .active-mars:hover{
-        background-color: var(--rust);
-        border: 1px solid var(--rust);
-    }
-    .active-jupiter,
-    .active-jupiter:hover{
-        background-color: var(--red);
-        border: 1px solid var(--red);
-    }
-    .active-saturn,
-    .active-saturn:hover{
-        background-color: var(--orange);
-        border: 1px solid var(--orange);
-    }
-    .active-uranus,
-    .active-uranus:hover{
-        background-color: var(--cyan);
-        border: 1px solid var(--cyan);
-    }
-    .active-neptune,
-    .active-neptune:hover{
-        background-color: var(--blue);
-        border: 1px solid var(--blue);
+    .active-planet:hover{
+        color: white;
+        background-color: #faba62;
+        border: 1px solid var(--primary);
     }
     
 }
 /* Active states for select */
 
 @media (max-width: 835px){
-    .select-mercury{
-        border-bottom: 4px solid var(--blue-light);
-    }
-    .select-venus{ 
-        border-bottom: 4px solid var(--yellow);
-    }
-    .select-earth{
-        border-bottom: 4px solid var(--purple);
-    }
-    .select-mars{
-        border-bottom: 4px solid var(--rust);
-    }
-    .select-jupiter{
-        border-bottom: 4px solid var(--red);
-    }
-    .select-saturn{
-        border-bottom: 4px solid var(--orange);
-    }
-    .select-uranus{
-        border-bottom: 4px solid var(--cyan);
-    }
-    .select-neptune{
-        border-bottom: 4px solid var(--blue);
+    .select-planet{
+        border-bottom: 4px solid var(--primary);
     }
 }
 
@@ -724,7 +643,7 @@ h1{
 .colPlaneta:hover{
     transform: scale(1.1);
     transition: 1s;
-    background-color:#1633779d;
+    background-color:#16337748;
     
 }
 
@@ -757,3 +676,4 @@ h1{
     width: 100%;
     max-width: 100%;
   }
+
