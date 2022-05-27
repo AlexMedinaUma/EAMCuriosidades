@@ -224,7 +224,18 @@ nav{
     }
 }
 
-
+.volver{
+    background-color: #F8CB8A;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 220px;
+    transition: 0.5s;
+}
+.volver:hover{
+    background-color: #faba62;
+    transition: 0.5s;
+}
 
 @media (min-width: 1024px){
     nav {
@@ -235,15 +246,6 @@ nav{
 
     .logo{
         flex: 1;
-    }
-    .volver{
-        background-color: #F8CB8A;
-        border-radius: 15px;
-        padding-left: 15px;
-        max-width: 220px;
-    }
-    .volver:hover{
-        background-color: #faba62;
     }
 
     .planets-container{
@@ -258,6 +260,7 @@ nav{
     li{
         border-top: 4px solid transparent;
     }
+
     .nav-planet:hover{
         border-top: 4px solid var(--primary);
     }
@@ -648,7 +651,7 @@ h1{
         justify-content: center;
         align-items: center;
         align-content: center;
-        border-radius: 20px;
+        border-radius: 3px;
 }
 .colPlaneta:hover{
     transform: scale(1.1);
@@ -692,3 +695,10 @@ h1{
     width: 100%;
     max-width: 100%;
   }
+
+  @media (max-width: 1024px) and (min-width: 835px){
+    .logo{
+        padding-top: 30px;
+    }
+
+}
